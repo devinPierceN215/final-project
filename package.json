@@ -1,0 +1,24 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "This add the tours page and corresponding detailed tour pages to Travel Fly, expanding upon the web pages made previously.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass scss/styles.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinPierceN215/final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devinPierceN215/final-project/issues"
+  },
+  "homepage": "https://github.com/devinPierceN215/final-project#readme",
+  "devDependencies": {
+    "sass": "^1.62.0"
+  }
+}
