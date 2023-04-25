@@ -1,0 +1,58 @@
+.navHolder{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+}
+
+nav{
+    width: 1020px;
+    height: 92.5px;
+    border-bottom: solid 2px white;
+    display: flex;
+    // background-color: orange;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        a{
+            margin-left: 20px;
+            font-size: 15px;
+            font-family: gillregular;
+            color: white;
+            text-decoration: none;
+            text-transform: lowercase;
+        }
+        p{
+            margin-left: 20px;
+            color: $site-blue;
+            font-size: 21px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    nav{
+        // width: 500px;
+        .right{
+            a, p{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.notHome{
+    .right{
+        a{
+            color: #000;
+        }
+    }
+    border-color: black;
+}

@@ -1,0 +1,48 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px;
+}
+
+#app{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+@media (max-width: 1050px){
+    #app{
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+}
+
+@font-face {
+    font-family: gillregular;
+    src: url(../fonts/Gill-Sans-Font-Family/Gill\ Sans.otf);
+}
+
+@font-face {
+    font-family: proxima-excond;
+    src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+
+@font-face {
+    font-family: gillitalic;
+    src: url(../fonts/Gill-Sans-Font-Family/Gill\ Sans\ Italic.otf);
+}
+
+@font-face {
+    font-family: gilllight;
+    src: url(../fonts/Gill-Sans-Font-Family/Gill\ Sans\ Light.otf);
+}
+
+@font-face {
+    font-family: gillbold;
+    src: url(../fonts/Gill-Sans-Font-Family/Gill\ Sans\ Bold.otf);
+}

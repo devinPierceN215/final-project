@@ -1,0 +1,27 @@
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: $site-blue;
+    .footcontainer{
+        max-width: 1019px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        color: white;
+        p{
+            font-family: gillregular;
+            font-size: 12px;
+        }
+        .right{
+            width: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 23px;
+        }
+    }
+}

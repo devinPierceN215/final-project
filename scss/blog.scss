@@ -1,0 +1,61 @@
+#app{
+    .blog{
+        h1{
+            margin-top: 148px;
+            @include proxmed;
+            margin-bottom: 0px;
+        }
+        .line{
+            width: 106px;
+            height: 2px;
+            background-color: black;
+            margin-top: 9px;
+            margin-bottom: 30px;
+        }
+        .container{
+            max-width: 980px;
+            margin-bottom: 100px;
+            align-items: normal;
+            .date{
+                height: 60px;
+                // i stfg if this doesnt stop resizing i'm going to smash my head in
+                width: 60px !important;
+                background-color: $site-blue;
+                text-align: center;
+                color: white;
+                h2{
+                    font-family: gillbold;
+                    font-size: 22px;
+                    margin-top: 6px;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-family: gilllight;
+                    font-size: 12px;
+                    margin-top: 0;
+                }
+            }
+            .right{
+                max-width: 900px;
+                margin-left: 20px;
+                .hero{
+                    width: 100%;
+                    background-image: url(../images/blog.jpg);
+                    @include imgback;
+                    height: 259px;
+                }
+                h2{
+                    margin-top: 20px;
+                    @include parag;
+                }
+                p{
+                    color: $site-blue;
+                    font-family: gillregular;
+                    font-size: 13px;
+                    margin-top: 10px;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}

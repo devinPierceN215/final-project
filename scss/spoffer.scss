@@ -1,0 +1,71 @@
+#app{
+    .spoffer{
+        margin-bottom: 100px;
+        h1{
+            margin-top: 148px;
+            @include proxmed;
+            margin-bottom: 0px;
+        }
+        .line{
+            width: 200px;
+            height: 2px;
+            background-color: black;
+            margin-top: 9px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            width: 538px;
+            height: 287px;
+            margin-left: 0;
+            margin-top: 35px;
+            margin-bottom: 25px;
+            #imgspoffer{
+                height: 100%;
+                width: 199px;
+                @include imgback;
+            }
+            .img1{
+                background-image: url(../images/special-offer-01.jpg);
+            }
+            .img2{
+                background-image: url(../images/special-offer-02.jpg);
+            }
+            .left{
+                width: 341px;
+                margin-left: 20px;
+                height: 100%;
+                .top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h2{
+                        @include proxmed;
+                        margin-bottom: 0;
+                    }
+                    h3{
+                        color: #FF7D38;
+                        font-size: 20px;
+                        font-family: proxima-excond;
+                    }
+                }
+                p{
+                    font-family: gilllight;
+                    font-size: 16px;
+                    margin-top: 21px;
+                }
+                .learn{
+                    @include buttons;
+                    width: 133px;
+                    height: 40px;
+                    border-radius: 20px;
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding-top: 10px;
+                    margin-top: 52px;
+                }
+            }
+        }
+    }
+}

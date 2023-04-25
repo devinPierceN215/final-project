@@ -1,0 +1,45 @@
+#app{
+    .tours{
+        margin-bottom: 100px;
+        .hero{
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour/tours-header.jpg);
+            max-width: 981px;
+            height: 200px;
+            @include imgback();
+            margin: 0 auto;
+            margin-top: 142px;
+            text-align: center;
+            color: white;
+            @include proxbig();
+            padding-top: 53px;
+            margin-bottom: -7px;
+        }
+        .container{
+            margin-top: 55px;
+            #tours4{
+                // new zealand wouldn't fit on one line so this is how I fixed it
+                h1{
+                    font-size: 50px;
+                }
+            }
+        }
+        #tours4{
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour/tour-04.jpg);
+        }
+        #tours5{
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour/tour-05.jpg);
+        }
+        #tours6{
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour/tour-06.jpg);
+        }
+        #tours7{
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour/tour-07.jpg);
+        }
+        #tours8{
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour/tour-08.jpg);
+        }
+        #tours9{
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour/tour-09.jpg);
+        }
+    }
+}

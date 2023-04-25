@@ -1,0 +1,839 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+@media (max-width: 1050px) {
+  #app {
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+}
+@font-face {
+  font-family: gillregular;
+  src: url(../fonts/Gill-Sans-Font-Family/Gill\ Sans.otf);
+}
+@font-face {
+  font-family: proxima-excond;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: gillitalic;
+  src: url(../fonts/Gill-Sans-Font-Family/Gill\ Sans\ Italic.otf);
+}
+@font-face {
+  font-family: gilllight;
+  src: url(../fonts/Gill-Sans-Font-Family/Gill\ Sans\ Light.otf);
+}
+@font-face {
+  font-family: gillbold;
+  src: url(../fonts/Gill-Sans-Font-Family/Gill\ Sans\ Bold.otf);
+}
+.navHolder {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  width: 1020px;
+  height: 92.5px;
+  border-bottom: solid 2px white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav .right a {
+  margin-left: 20px;
+  font-size: 15px;
+  font-family: gillregular;
+  color: white;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+nav .right p {
+  margin-left: 20px;
+  color: #79ADDC;
+  font-size: 21px;
+  margin-top: 10px;
+}
+
+@media (max-width: 590px) {
+  nav .right a, nav .right p {
+    margin-left: 10px;
+  }
+}
+.notHome {
+  border-color: black;
+}
+.notHome .right a {
+  color: #000;
+}
+
+#app .home .hero {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 172px;
+  color: white;
+}
+#app .home .hero h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: proxima-excond;
+  margin-bottom: 0px;
+}
+#app .home .hero p {
+  margin-top: 29px;
+  font-family: gillitalic;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+#app .home .hero a {
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  height: 40px;
+  width: 121px;
+  font-family: gillregular;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #79ADDC;
+  color: white;
+  padding-top: 10px;
+}
+#app .home div.container {
+  margin-top: -43px;
+}
+#app .home .form {
+  max-width: 858px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#app .home .form h1 {
+  font-size: 60px;
+  font-family: proxima-excond;
+  text-transform: uppercase;
+}
+#app .home .form input {
+  height: 58px;
+  margin-bottom: 20px;
+  font-family: gilllight;
+  font-size: 18px;
+  padding-left: 20px;
+  border: solid 1px #79ADDC;
+}
+#app .home .form input:focus {
+  outline: none;
+}
+#app .home .form #left {
+  width: 344px;
+  margin-right: 17px;
+}
+#app .home .form #right {
+  width: 453px;
+}
+#app .home .form .form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+#app .home .form #check {
+  width: 698px;
+}
+#app .home .form p {
+  font-family: gilllight;
+  font-size: 18px;
+}
+#app .home .form i {
+  position: absolute;
+  font-size: 19px;
+}
+#app .home .form #calender {
+  top: 20px;
+  right: 20px;
+}
+#app .home .form #dropdown {
+  width: 103px;
+}
+#app .home .form #down1 {
+  right: 20px;
+  top: 20px;
+}
+#app .home .form #down2 {
+  right: 39%;
+  top: 20px;
+}
+#app .home .form #down3 {
+  right: 76%;
+  top: 20px;
+}
+#app .home .form #message {
+  width: 100%;
+  height: 192px;
+}
+#app .home .form #message::placeholder {
+  position: absolute;
+  top: 20px;
+}
+#app .home .form a {
+  display: block;
+  font-family: gillregular;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #79ADDC;
+  color: white;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 17px;
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 23px;
+}
+@media (max-width: 880px) {
+  #app .home .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #app .home .container .tile {
+    margin-bottom: 20px;
+  }
+  #app .home .form #left, #app .home .form #right {
+    width: 100%;
+  }
+  #app .home .form #check {
+    width: 80%;
+  }
+}
+
+.homeapp {
+  margin: 0 !important;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 818px;
+}
+.container #home1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-01.jpg);
+}
+.container #home2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-02.jpg);
+}
+.container #home3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-03.jpg);
+}
+.container .tile {
+  width: 236px;
+  height: 304px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.container .tile h1 {
+  margin-top: 47px;
+  font-size: 60px;
+  font-family: proxima-excond;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.container .tile h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: proxima-excond;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.container .tile a {
+  display: block;
+  margin: 0 auto;
+  margin-top: 56px;
+  color: white;
+  font-family: gillregular;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #79ADDC;
+  height: 40px;
+  width: 133px;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #79ADDC;
+}
+footer .footcontainer {
+  max-width: 1019px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: white;
+}
+footer .footcontainer p {
+  font-family: gillregular;
+  font-size: 12px;
+}
+footer .footcontainer .right {
+  width: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 23px;
+}
+
+#app .about {
+  margin-bottom: 179px;
+}
+#app .about .about-header h1 {
+  margin-top: 183px;
+  font-size: 60px;
+  font-family: proxima-excond;
+  margin-bottom: 0;
+}
+#app .about .about-header .border-bottom {
+  width: 171px;
+  height: 2px;
+  background-color: black;
+  margin-top: 0;
+  margin-bottom: 36.5px;
+}
+#app .about .about-header p {
+  font-family: gillregular;
+  font-size: 16px;
+}
+#app .about .about-client-quotes h2 {
+  font-family: proxima-excond;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 95px;
+  margin-bottom: 0;
+}
+#app .about .about-client-quotes .border-bottom {
+  width: 255px;
+  height: 2px;
+  background-color: black;
+  margin-top: 0;
+}
+#app .about .about-client-quotes .client-box {
+  margin-top: 38px;
+  max-width: 722px;
+  height: 150px;
+  display: flex;
+}
+#app .about .about-client-quotes .client-box .client-image img {
+  width: 260px;
+  height: 150px;
+  object-fit: cover;
+}
+#app .about .about-client-quotes .client-box .container {
+  position: relative;
+  display: block;
+}
+#app .about .about-client-quotes .client-box .container .client-quote {
+  max-width: 385px;
+  margin-left: 21px;
+  margin-top: 38px;
+  font-family: gillitalic;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+#app .about .about-client-quotes .client-box .container .client-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  color: #79ADDC;
+  font-family: proxima-excond;
+  font-size: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+#app .tours {
+  margin-bottom: 100px;
+}
+#app .tours .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tours-header.jpg);
+  max-width: 981px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 142px;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: proxima-excond;
+  padding-top: 53px;
+  margin-bottom: -7px;
+}
+#app .tours .container {
+  margin-top: 55px;
+}
+#app .tours .container #tours4 h1 {
+  font-size: 50px;
+}
+#app .tours #tours4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-04.jpg);
+}
+#app .tours #tours5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-05.jpg);
+}
+#app .tours #tours6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-06.jpg);
+}
+#app .tours #tours7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-07.jpg);
+}
+#app .tours #tours8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-08.jpg);
+}
+#app .tours #tours9 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-09.jpg);
+}
+
+#app .tourPages #hero1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-01.jpg);
+}
+#app .tourPages #hero2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-02.jpg);
+}
+#app .tourPages #hero3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-03.jpg);
+}
+#app .tourPages #hero4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-04.jpg);
+}
+#app .tourPages #hero5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-05.jpg);
+}
+#app .tourPages #hero6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-06.jpg);
+}
+#app .tourPages #hero7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-07.jpg);
+}
+#app .tourPages #hero8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-08.jpg);
+}
+#app .tourPages #hero9 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-09.jpg);
+}
+#app .tourPages .hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 981px;
+  height: 413px;
+  margin: 0 auto;
+  margin-top: 141px;
+  font-family: proxima-excond;
+  font-size: 80px;
+  color: white;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 18px;
+}
+#app .tourPages .hero h2 {
+  font-size: 30px;
+  text-align: right;
+  position: absolute;
+  bottom: -4px;
+  right: 4px;
+  margin-bottom: 0;
+}
+#app .tourPages .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 981px;
+  margin-top: 40px;
+}
+#app .tourPages .container .tourimg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 298px;
+  height: 347px;
+}
+#app .tourPages .container #tourimg1 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-israel/israel-tour-01.jpg);
+}
+#app .tourPages .container #tourimg2 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-israel/israel-tour-02.jpg);
+}
+#app .tourPages .container #tourimg3 {
+  background-image: url(../images/tour/tour-israel/israel-tour-03.jpg);
+}
+#app .tourPages .container #tourimg4 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-usa/usa-tour-01.jpg);
+}
+#app .tourPages .container #tourimg5 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-usa/usa-tour-02.jpg);
+}
+#app .tourPages .container #tourimg6 {
+  background-image: url(../images/tour/tour-usa/usa-tour-03.jpg);
+}
+#app .tourPages .container #tourimg7 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-aus/aus-tour-01.jpg);
+}
+#app .tourPages .container #tourimg8 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-aus/aus-tour-02.jpg);
+}
+#app .tourPages .container #tourimg9 {
+  background-image: url(../images/tour/tour-aus/aus-tour-03.jpg);
+}
+#app .tourPages .container #tourimg10 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-nz/nz-tour-01.jpg);
+}
+#app .tourPages .container #tourimg11 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-nz/nz-tour-02.jpg);
+}
+#app .tourPages .container #tourimg12 {
+  background-image: url(../images/tour/tour-nz/nz-tour-03.jpg);
+}
+#app .tourPages .container #tourimg13 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-france/france-tour-01.jpg);
+}
+#app .tourPages .container #tourimg14 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-france/france-tour-02.jpg);
+}
+#app .tourPages .container #tourimg15 {
+  background-image: url(../images/tour/tour-france/france-tour-03.jpg);
+}
+#app .tourPages .container #tourimg16 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-egypt/egypt-tour-01.jpg);
+}
+#app .tourPages .container #tourimg17 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-egypt/egypt-tour-02.jpg);
+}
+#app .tourPages .container #tourimg18 {
+  background-image: url(../images/tour/tour-egypt/egypt-tour-03.jpg);
+}
+#app .tourPages .container #tourimg19 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-japan/japan-tour-01.jpg);
+}
+#app .tourPages .container #tourimg20 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-japan/japan-tour-02.jpg);
+}
+#app .tourPages .container #tourimg21 {
+  background-image: url(../images/tour/tour-japan/japan-tour-03.jpg);
+}
+#app .tourPages .container #tourimg22 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-canada/canada-tour-01.jpg);
+}
+#app .tourPages .container #tourimg23 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-canada/canada-tour-02.jpg);
+}
+#app .tourPages .container #tourimg24 {
+  background-image: url(../images/tour/tour-canada/canada-tour-03.jpg);
+}
+#app .tourPages .container #tourimg25 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-uae/uae-tour-01.jpg);
+}
+#app .tourPages .container #tourimg26 {
+  margin-right: 20px;
+  background-image: url(../images/tour/tour-uae/uae-tour-02.jpg);
+}
+#app .tourPages .container #tourimg27 {
+  background-image: url(../images/tour/tour-uae/uae-tour-03.jpg);
+}
+#app .tourPages h3 {
+  margin-top: 19px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-family: proxima-excond;
+}
+#app .tourPages .borderBottom {
+  width: 171px;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 36.5px;
+}
+#app .tourPages p {
+  font-family: gillregular;
+  font-size: 16px;
+  margin-bottom: 51px;
+}
+#app .tourPages a {
+  display: block;
+  width: 144px;
+  height: 40px;
+  border-radius: 20px;
+  font-family: gillregular;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #79ADDC;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#app .spoffer {
+  margin-bottom: 100px;
+}
+#app .spoffer h1 {
+  margin-top: 148px;
+  font-size: 30px;
+  font-family: proxima-excond;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+#app .spoffer .line {
+  width: 200px;
+  height: 2px;
+  background-color: black;
+  margin-top: 9px;
+}
+#app .spoffer .container {
+  display: flex;
+  justify-content: space-between;
+  width: 538px;
+  height: 287px;
+  margin-left: 0;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+#app .spoffer .container #imgspoffer {
+  height: 100%;
+  width: 199px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#app .spoffer .container .img1 {
+  background-image: url(../images/special-offer-01.jpg);
+}
+#app .spoffer .container .img2 {
+  background-image: url(../images/special-offer-02.jpg);
+}
+#app .spoffer .container .left {
+  width: 341px;
+  margin-left: 20px;
+  height: 100%;
+}
+#app .spoffer .container .left .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#app .spoffer .container .left .top h2 {
+  font-size: 30px;
+  font-family: proxima-excond;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+#app .spoffer .container .left .top h3 {
+  color: #FF7D38;
+  font-size: 20px;
+  font-family: proxima-excond;
+}
+#app .spoffer .container .left p {
+  font-family: gilllight;
+  font-size: 16px;
+  margin-top: 21px;
+}
+#app .spoffer .container .left .learn {
+  font-family: gillregular;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #79ADDC;
+  width: 133px;
+  height: 40px;
+  border-radius: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 52px;
+}
+
+#app .blog h1 {
+  margin-top: 148px;
+  font-size: 30px;
+  font-family: proxima-excond;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+#app .blog .line {
+  width: 106px;
+  height: 2px;
+  background-color: black;
+  margin-top: 9px;
+  margin-bottom: 30px;
+}
+#app .blog .container {
+  max-width: 980px;
+  margin-bottom: 100px;
+  align-items: normal;
+}
+#app .blog .container .date {
+  height: 60px;
+  width: 60px !important;
+  background-color: #79ADDC;
+  text-align: center;
+  color: white;
+}
+#app .blog .container .date h2 {
+  font-family: gillbold;
+  font-size: 22px;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+#app .blog .container .date p {
+  font-family: gilllight;
+  font-size: 12px;
+  margin-top: 0;
+}
+#app .blog .container .right {
+  max-width: 900px;
+  margin-left: 20px;
+}
+#app .blog .container .right .hero {
+  width: 100%;
+  background-image: url(../images/blog.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 259px;
+}
+#app .blog .container .right h2 {
+  margin-top: 20px;
+  font-family: gillregular;
+  font-size: 16px;
+}
+#app .blog .container .right p {
+  color: #79ADDC;
+  font-family: gillregular;
+  font-size: 13px;
+  margin-top: 10px;
+  width: 40%;
+}
+
+#app .contact h1 {
+  margin-top: 148px;
+  font-size: 30px;
+  font-family: proxima-excond;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+#app .contact .line {
+  width: 159px;
+  height: 2px;
+  background-color: black;
+  margin-top: 9px;
+  margin-bottom: 30px;
+}
+#app .contact .container {
+  margin-bottom: 100px;
+  margin-left: 0;
+  margin-top: 50px;
+  align-items: normal;
+  max-width: 980px;
+}
+#app .contact .container .left p {
+  font-family: gilllight;
+  font-size: 18px;
+  margin-top: 34px;
+}
+#app .contact .container .right input, #app .contact .container .right textarea {
+  width: 100%;
+  height: 60px;
+  background-color: #F5F5F5;
+  border: 0;
+  margin-bottom: 21px;
+  margin-left: 50px;
+  padding-left: 20px;
+  font-family: gillregular;
+  font-size: 16px;
+}
+#app .contact .container .right textarea {
+  height: 199px;
+  padding-top: 20px;
+}
+#app .contact .container .right a {
+  margin-left: 50px;
+  font-family: gillregular;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #79ADDC;
+  width: 167px;
+  height: 60px;
+  display: block;
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

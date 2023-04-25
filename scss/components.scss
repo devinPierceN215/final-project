@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 818px;
+    #home1{
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour/tour-01.jpg);
+    }
+    #home2{
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour/tour-02.jpg);
+    }
+    #home3{
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour/tour-03.jpg);
+    }
+    .tile{
+        width: 236px;
+        height: 304px;
+        // background-color: aqua;
+        @include imgback();
+        color: white;
+        text-align: center;
+        h1{
+            margin-top: 47px;
+            @include proxbig();
+            text-transform: uppercase;
+            margin-bottom: 0px;
+        }
+        h2{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-family: proxima-excond;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        a{
+            display: block;
+            margin: 0 auto;
+            margin-top: 56px;
+            color: white;
+            @include buttons();
+            height: 40px;
+            width: 133px;
+            border-radius: 20px;
+            padding-top: 10px;
+        }
+    }
+}
+

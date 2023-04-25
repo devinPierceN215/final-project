@@ -1,0 +1,29 @@
+@mixin proxbig(){
+    font-size: 60px;
+    font-family: proxima-excond;
+}
+
+@mixin proxmed(){
+    font-size: 30px;
+    font-family: proxima-excond;
+    text-transform: uppercase;
+}
+
+@mixin buttons(){
+    font-family: gillregular;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $site-blue;
+}
+
+@mixin parag(){
+    font-family: gillregular;
+    font-size: 16px;
+}
+
+@mixin imgback(){
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
