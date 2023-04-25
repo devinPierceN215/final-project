@@ -1,30 +1,33 @@
-# Homework Six - Tours
+# Final Project - Travel Fly
 
-This add the tours page and corresponding detailed tour pages to Travel Fly, expanding upon the web pages made previously.
+This makes travel fly dynamic.
 
 ## Purpose
 
-This homework assignment will:
+This final project will:
 
-* Create multiple pages from a CSS class 
-* Make a CSS template
-* Teach you how to make your site responsive
-* Teach you how to deal with images next to text 
-* Use media queries
-* Use percentages
+* Be a single-page application
+* Must be in an MVC format
+* Look just like the travel-fly home work assignment and this prototype: https://xd.adobe.com/spec/7a379659-8751-4968-7a8f-0286dab79e46-0c06/
+* The font's maybe wrong to look at the PDF's under files > travel-fly folder
+* Must include all the pages. 
+* Must use jQuery or pure JavaScript
+* Must navigate using the URL
 
 ## Task
 
-For this homework assignment, you will be making the tour page and the individual tour pages from the Travel-fly prototype and making it responsive.
+For this homework assignment, you will:
 
-* You must create a project named homework-six.
-* You must build off of the previous assignment. 
-* You must fix any issues with the previous assignment, especially if it doesn't look like the prototype. 
-* Your tour page must look like the prototype. Your text must look good inside each image. 
-* Each individual page must look like the prototype and the text inside the header image must stay in place and the rest of the page must be responsive. 
-* Your page must be responsive. 
-* You can align the elements as you wish but they must look good and not touch the sides of the browser.
+* You must create a project named final-project
+* You must take your old travel-fly project and turn it into a single-page application.
+* It must look exactly like the travel-fly prototype
+* You can find the fonts and images under the Files > Travel-fly folder
+* You must use jQuery or JavaScript
+* Use only one page and load all the content onto that page dynamically. 
+* You must navigate using the routing that I showed you in class. This uses the URL for navigation.
+* Must use the MVC model we have discussed, and it must by type module
+* Upload your project to Github and Web4 and add your Web4 link to the README file in Github, and submit your Github link. 
 
-## Homework 4 URL
+## Homework URL
 
-[web4 link](https://in-info-web4.informatics.iupui.edu/~jinipier/homework-six/tours.html)
+[web4 link](https://in-info-web4.informatics.iupui.edu/~jinipier/final-project/#home)
