@@ -1,36 +1,35 @@
 #app{
-    .home{
-        .hero{
-            width: 100%;
-            height: 500px;
-            background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
-            @include imgback();
-            text-align: center;
-            padding-top: 172px;
-            color: white;
-            h1{
-                text-transform: uppercase;
-                @include proxbig();
-                margin-bottom: 0px;
-            }
-            p{
-                margin-top: 29px;
-                font-family: gillitalic;
-                font-size: 20px;
-                margin-bottom: 0px;
-            }
-            a{
-                display: block;
-                margin: 0 auto;
-                margin-top: 48px;
-                height: 40px;
-                width: 121px;
-                @include buttons();
-                color: white;
-                padding-top: 10px;
-            }
+    .homehero{
+        width: 100%;
+        height: 500px;
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+        @include imgback();
+        text-align: center;
+        padding-top: 172px;
+        color: white;
+        h1{
+            text-transform: uppercase;
+            @include proxbig();
+            margin-bottom: 0px;
         }
-        
+        p{
+            margin-top: 29px;
+            font-family: gillitalic;
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+        a{
+            display: block;
+            margin: 0 auto;
+            margin-top: 48px;
+            height: 40px;
+            width: 121px;
+            @include buttons();
+            color: white;
+            padding-top: 10px;
+        }
+    }
+    .home{
         //taken from in class lecture, here just for myself
         
         // @media (max-width: 860px) {
@@ -165,5 +164,6 @@
 
 #home{
     margin: 0 !important;
+    width:100%;
 
 }
