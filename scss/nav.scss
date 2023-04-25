@@ -8,7 +8,6 @@
 nav{
     width: 1020px;
     height: 92.5px;
-    border-bottom: solid 2px white;
     display: flex;
     // background-color: orange;
     align-items: center;
@@ -24,7 +23,6 @@ nav{
             margin-left: 20px;
             font-size: 15px;
             font-family: gillregular;
-            color: white;
             text-decoration: none;
             text-transform: lowercase;
         }
@@ -33,6 +31,22 @@ nav{
             color: $site-blue;
             font-size: 21px;
             margin-top: 10px;
+        }
+    }
+}
+.nav-white{
+    border-bottom: solid 2px white;
+    .right{
+        a{
+            color: white;
+        }
+    }
+}
+.nav-black{
+    border-bottom: solid 2px black;
+    .right{
+        a{
+            color: black;
         }
     }
 }
@@ -46,13 +60,4 @@ nav{
             }
         }
     }
-}
-
-.notHome{
-    .right{
-        a{
-            color: #000;
-        }
-    }
-    border-color: black;
 }
